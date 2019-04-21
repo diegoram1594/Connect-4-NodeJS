@@ -54,8 +54,8 @@ function newPlayer(number){
 function renderGameStatus (data,win) {
   localGame=data;
   if (win){
-    data.player1.name="<i>Wating for player...</i>";
-    data.player2.name="<i>Wating for player...</i>";
+    data.player1.name="<i>Waiting for player...</i>";
+    data.player2.name="<i>Waiting for player...</i>";
     data.player1.lock=false;
     data.player2.lock=false;
   }else{
@@ -65,10 +65,10 @@ function renderGameStatus (data,win) {
     }
 
     if(data.player1.name==null){
-      data.player1.name="<i>Wating for player...</i>";
+      data.player1.name="<i>Waiting for player...</i>";
     }
     if (data.player2.name==null){
-      data.player2.name="<i>Wating for player...</i>";
+      data.player2.name="<i>Waiting for player...</i>";
     }
   }
   var html = (`<div>
