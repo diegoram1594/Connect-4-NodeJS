@@ -3,7 +3,7 @@ const app = express();
 const server= require('http').Server(app);
 const io = require('socket.io')(server);
 
-let port=3000;
+let port=process.env.PORT || 8080;
 
 //Init board
 let newBoard= new Array(6);
