@@ -5,10 +5,26 @@
   <title>Test</title>
   <script src="/socket.io/socket.io.js"></script>
   <script src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
 </head>
 <body>
-  <h1>My App</h1>
-  <div id="messages"></div>
-  <br/>
+  <h1>CONNECT 4</h1>
+  
+  <div id="gameStatus"></div>
+  
+    <button id="btnPlayer1" onclick="newPlayer('p1')" >Jugador 1</button>
+    <button id="btnPlayer2" onclick="newPlayer('p2')">Jugador 2</button>
+
+    <input id="playerName" type="text" placeholder="Your name"/>
+  
+    <br><br>
+    <div id="nameTurn"></div>
+    <br><br><br>
+    
+
+    <div id="gameBoard"></div>
+
+      <br/>
 </body>
 </html>
